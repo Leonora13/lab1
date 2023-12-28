@@ -12,7 +12,9 @@
          <li><a href = {{$about}}>О нас</a></li> 
          <li><a href = {{$contact}}>Контактная информация</a></li> 
     </ul>
-    <p> Сообщение: {{$text}}</p>
-    <p> Телефон: {{$phone}}</p>
+    @if ($text!="" && $phone!="")
+        <p> Сообщение: {{$text}}</p>
+        <p> Телефон: {{$phone}}</p>
+    @endif
 </body>
 </html>
